@@ -1,0 +1,20 @@
+package fundamentals;
+
+import java.util.Scanner;
+
+public class TakeUserInput {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a, b;
+		
+		Scanner s = new Scanner(System.in);
+		a = s.nextInt(); 	// fetches the first number user entered
+		b = s.nextInt();
+		int c = a+b;
+		System.out.println(c);
+		
+	}
+
+}

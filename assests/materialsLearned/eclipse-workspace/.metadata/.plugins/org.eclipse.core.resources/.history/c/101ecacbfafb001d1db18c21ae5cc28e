@@ -1,0 +1,24 @@
+package Functions;
+import java.util.Arrays;
+public class selectionSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] nums = {4, 11, 7, 4, 2, 6, 3, 4, 10, 9};
+		
+		for(int i = 0; i < nums.length; i++) {
+			int currVal = nums[i];
+			
+			for(int j = i+1; j < nums.length -1; j++) {
+				
+				int test = nums[j];
+				
+				if(test <= currVal) {
+					int temp = nums[i];
+					nums[j] = temp;
+					nums[i] = test;
+				}
+			}
+		}System.out.println(Arrays.toString(nums));
+	}
+}
