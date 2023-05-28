@@ -17,7 +17,7 @@ public class StringBasics {
 		 System.out.println(str1.compareTo(str3));
 		System.out.println(str1.length());
 		System.out.println(str1.charAt(3));
-		
+		System.out.println();
 		
 		
 	}

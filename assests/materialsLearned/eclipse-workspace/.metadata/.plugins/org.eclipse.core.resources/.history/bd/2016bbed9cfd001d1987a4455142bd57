@@ -19,7 +19,6 @@ public class StringBasics {
 		System.out.println(str1.charAt(3));
 		
 		
-		
 	}
 
 }
