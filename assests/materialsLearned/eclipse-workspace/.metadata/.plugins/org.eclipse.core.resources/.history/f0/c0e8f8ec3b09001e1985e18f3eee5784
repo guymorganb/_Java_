@@ -1,0 +1,28 @@
+package inheritance;
+
+public class VehicleUse {
+
+	public static void main(String[] args) {
+		
+		Vehicle v = new Vehicle();
+		
+		v.color = "Red";
+		v.maxSpeed = 85;
+		v.print();
+		// car extends vehicle class, and the properties from vehicle will be available in car
+		car c = new car();
+		
+		c.color = "Black";
+		c.maxSpeed = 100;
+		c.numDoors = 4;
+//		c.print();
+		c.printCar();
+		// bicycle extends vehicle class, and the properties from vehicle will be available in bicycle
+		bicycle b = new bicycle();
+		
+		b.color = "green";
+		b.print();
+
+	}
+
+}

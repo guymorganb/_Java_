@@ -1,0 +1,18 @@
+package ObjectOrientedPrograming;
+
+public class Student {
+//	access modifiers: add private before an attribute to prevent access outside of the class
+//	private String email;	// restricts access to only within the class
+
+	String name;
+	public int rollNumber;
+
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	public void setRollNumber(int num) {
+		rollNumber = num;
+	}
+
+	
+}

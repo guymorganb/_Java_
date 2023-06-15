@@ -1,0 +1,5 @@
+package DemoOfPassingBetweenPackages;
+
+public class StudentUse2 {
+
+}

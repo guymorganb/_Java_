@@ -1,0 +1,14 @@
+package inheritance_2;
+import inheritance.Vehicle;
+public class Truck extends Vehicle {
+	
+	int maxCapacity;
+	
+	
+	// color and maxSpeed have default scope which is available only inside its package, so we need to use a getColor() which has public scope
+	public void print() {
+		System.out.println("Vehicle " + "color "+ getColor() +" maxspeed "+ getMaxSpeed() + " maxCapacity " + maxCapacity );
+	}
+	
+	
+}

@@ -1,0 +1,18 @@
+package ObjectOrientedPrograming;
+
+public class DynamicArray {
+	// keep an internal array
+	
+	private int data[];
+	
+	private int nextElementIndex;
+	
+	public DynamicArray(){
+		data = new int[5];
+		nextElementIndex = 0;		// sets initial element index to 0, so when calling add() an element is added to the next open index
+	}
+	
+	public int size() {
+		return next
+	}
+}

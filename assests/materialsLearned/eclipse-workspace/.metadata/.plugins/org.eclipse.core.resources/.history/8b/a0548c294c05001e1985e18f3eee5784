@@ -1,0 +1,12 @@
+package ObjectOrientedPrograming;
+
+public class Student {
+
+	
+	String name;
+	int rollNumber;
+//	access modifiers: add private before an attribute to prevent access outside of the class
+	private String email;	// restricts access to only within the class
+	
+	
+}

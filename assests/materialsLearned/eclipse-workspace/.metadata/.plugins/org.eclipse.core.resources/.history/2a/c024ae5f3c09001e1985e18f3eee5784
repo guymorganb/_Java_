@@ -1,0 +1,21 @@
+package inheritance;
+
+public class Vehicle {
+	
+	// we have moved the common properties from the child/sub-class into a parent/base-class Vehicle
+	private String color;		// this was made private, so setters and getters must be created
+	int maxSpeed;
+	
+	public String getColor() {
+		return color;
+	}
+	
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	public void print() {
+		System.out.println("Vehicle " + "color "+ color+" maxspeed "+ maxSpeed);
+	}
+	
+}

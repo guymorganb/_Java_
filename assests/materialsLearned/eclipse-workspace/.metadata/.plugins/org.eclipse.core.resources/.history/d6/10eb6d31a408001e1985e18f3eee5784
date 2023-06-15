@@ -1,0 +1,12 @@
+
+
+
+
+package ObjectOrientedPrograming;
+
+import java.util.*; // this imports all classes and interfaces from util, such as (List, Set, Map, TreeMap) and (Date, Calendar) and (Random, Scanner)
+
+public class Polynomial {
+	private Map<Integer, Integer> createPolynomial = new TreeMap<>();
+	
+}

@@ -1,0 +1,21 @@
+package Strings;
+
+public class reverseStringWordwise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "Coding is fun.";
+		String ans = " ";
+		String reversed = " ";
+		for(int i = 0; i < str.length(); i++) {
+			reversed += str.charAt(i);
+			
+			if(str.charAt(i) == ' ') {
+				break;
+//				ans += reversed;
+			}
+		}
+		System.out.print(reversed); 
+	}
+
+}

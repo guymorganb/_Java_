@@ -1,0 +1,48 @@
+package ObjectOrientedPrograming;
+
+public class Student {
+//	access modifiers: add private before an attribute to prevent access outside of the class
+//	private String email;	// restricts access to only within the class
+
+	private String name;
+	final  private int rollNumber;
+	double gpa;
+	final double conversionFactor = 0.95;	// final keyword wont allow the value to be changed. for variables whos value is assigned only once.
+	static int numStudents;		// static properties are shared by all objects.
+	
+//	constructor function, does not take a return type. Constructor must match the class name.
+	
+	public Student(String n, int num) {
+		name = n;
+		rollNumber = num;
+		numStudents++;
+	}
+	
+	//to allow flexibility to not require rollNUmber we need to make another constructor function
+	
+//	public Student(String n) {
+//		name = n;
+////		using only this constructor rollNumber will default to 0
+//	}
+	
+//	function to print
+	
+	public void print() {
+		System.out.println(name + " " + rollNumber);
+	}
+	
+	
+//	getter and setter methods
+	
+	public int getRollNumber() {
+		return rollNumber;
+	}
+	
+//	public void setRollNumber(int rollNumber) {
+//		if(rollNumber <= 0) {
+//			return;
+//		}
+//	this.rollNumber = rollNumber;	// this references the current object.property and sets it 
+//	}
+//	
+}

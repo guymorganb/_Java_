@@ -1,0 +1,21 @@
+package Strings;
+
+public class RemoveConsecutiveDuplicates {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String str = "aabbcddeff";
+		String ans = "";
+		ans = ans + str.charAt(0);
+		for(int i = 1; i < str.length(); i++) {
+			if(ans.charAt(i-1) == ans.charAt(i)) {
+				continue;
+			}else {
+				ans = ans + str.charAt(i);
+			}
+			
+			System.out.print(ans);
+		}
+	}
+
+}

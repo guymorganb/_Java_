@@ -1,0 +1,28 @@
+package ExceptionHandling;
+
+public class Exceptions {
+	
+	
+	public static int divide(int a, int b) throws divideByZeroException {
+		if(b == 0) {
+			throw new divideByZeroException();  
+			
+//			throw new ArithmeticException();
+		}
+		return a/b;
+	}
+	
+
+	public static void main(String[] args) {
+		// 3 types of exceptions in java: 
+//		Errors: 
+//		Checked: expected exceptions
+//		Unchecked: Unexpected exceptions
+		
+		
+		divide(10,0);
+		
+		
+	}
+
+}

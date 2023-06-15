@@ -1,0 +1,13 @@
+package ObjectOrientedPrograming;
+
+public class DynamicArray {
+	// keep an internal array
+	
+	private int data[];
+	
+	public DynamicArray(){
+		data = new int[5];
+	}
+	
+	
+}

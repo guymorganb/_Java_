@@ -1,0 +1,36 @@
+package Arrays2D;
+
+import java.util.Scanner;
+
+public class printRowWise {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the number of rows");
+		
+		int rows = s.nextInt();
+		System.out.println("Enter number of columns");
+		int cols = s.nextInt();
+		
+		int[][] arr = new int[rows][cols];
+		
+		for(int i=0; i < rows; i ++) {
+			for(int j=0; j<cols; j++) {
+				System.out.println("Enter the element at row " + i + " column " + j);
+				arr[i][j]=s.nextInt();
+			}
+		}
+		int index = 0;
+		int row = arr[0].length;
+		int columns = arr.length;
+		int[] result = new int[row * columns];
+		for(int i = 0; i < columns; i++) {
+			for(int j = 0; j < row; j++) {
+				result[index]= arr[columns][row];
+				index++;
+			}
+		}System.out.print(result + "end");
+	}
+
+}

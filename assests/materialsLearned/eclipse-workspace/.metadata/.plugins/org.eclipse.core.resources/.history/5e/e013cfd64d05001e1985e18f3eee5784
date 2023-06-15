@@ -1,0 +1,25 @@
+package ObjectOrientedPrograming;
+
+
+public class StudentUse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		Scanner s = new Scanner(source)
+//		Creating a new student object
+//		s1 and s2 are stored in the stack, while the student object is stored in the heap
+		Student s1 = new Student();
+		s1.name = "Guy";
+//		s1.rollNumber = 4;
+		
+		s1.setRollNumber(10);;
+		System.out.println(s1.rollNumber + " " + s1.getRollNumber());
+		Student s2 = new Student();
+		s2.name = "Morgan";
+		s2.rollNumber = 9;
+		
+		System.out.println(s2.rollNumber);
+	}
+
+}

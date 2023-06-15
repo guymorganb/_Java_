@@ -1,0 +1,16 @@
+package inheritance_2;
+
+import inheritance.Vehicle;
+
+public class Vehicle2Use extends Vehicle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Vehicle v = new Vehicle();
+		
+		v.maxSpeed = 10;
+		
+		v.minSpeed = 5;	// cannot use minSpeed here because Vehicle2Use is not a derived class.
+	}
+
+}
