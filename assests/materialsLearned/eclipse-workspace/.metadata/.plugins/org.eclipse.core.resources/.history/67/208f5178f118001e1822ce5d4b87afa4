@@ -1,0 +1,21 @@
+package arrayLists;
+
+import java.util.ArrayList;
+
+
+public class arrayList {
+
+	public static void main(String[] args) {
+		
+		ArrayList<Integer> arr = new ArrayList<>();
+		arr.add(10);
+		arr.add(20);
+		arr.add(30);
+		arr.add(1, 80);	// will add 80 at index 1, and shift remaining elements
+		System.out.println(arr.size());
+		System.out.println(arr.get(2));	// get the element at index 2
+		
+		
+	}
+
+}

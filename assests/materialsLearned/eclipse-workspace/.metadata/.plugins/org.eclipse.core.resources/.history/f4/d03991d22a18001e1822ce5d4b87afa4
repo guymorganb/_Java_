@@ -1,0 +1,9 @@
+package inheritance;
+// Interfaces are pure abstract classes
+public interface vehicleInterface {
+	// all variables in interface are public final and static
+	double PI = 3.14;
+	boolean isMotorized();
+	
+	
+}

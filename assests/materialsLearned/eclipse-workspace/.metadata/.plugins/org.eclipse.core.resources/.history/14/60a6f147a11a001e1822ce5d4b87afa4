@@ -1,0 +1,24 @@
+package linkedLists;
+import java.util.Scanner;
+public class userInputLinkedList {
+	
+	public static Node<Integer> takeInput(){
+		Scanner s = new Scanner(System.in);
+		// keep taking user input until user inputs -1
+		int data = s.nextInt();
+		// return the head
+		Node<Integer> head = null;
+		while(data != -1) {
+			Node<Integer> currentNode = new Node<Integer>(data);
+			
+			
+			data = s.nextInt();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

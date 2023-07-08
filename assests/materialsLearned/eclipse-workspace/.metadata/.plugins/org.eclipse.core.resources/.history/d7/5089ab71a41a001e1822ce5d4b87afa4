@@ -1,0 +1,32 @@
+package linkedLists;
+
+public class insertNodeIntoLinkedList {
+
+	public static void insert(Node<Integer> head, int elem, int pos) {
+//		2 -> 8 -> 10 -> 15 -> 25
+		// insert 20 at position 3
+		// if you have to insert at position i, you must have the reference to position i-1
+		// travel to i-1 node
+		// make connection to i'th node before connecting i-1 node
+		Node<Integer> newNode = new Node<Integer>(elem);
+		
+		int count = 0;
+		// reference to node at previous position
+		Node<Integer> prev = head;
+		while(count < pos - 1) {
+			count++;
+			prev = prev.next;
+		}
+		// points to the new node
+		// make connection before breaking the i-1 nodes connection
+		newNode.next = prev.next;
+		
+		prev.next = newNode;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

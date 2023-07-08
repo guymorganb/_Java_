@@ -1,0 +1,7 @@
+package inheritance;
+// Interfaces are pure abstract
+public interface vehicleInterface {
+	public abstract boolean isMotorized();
+	
+	
+}

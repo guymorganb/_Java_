@@ -1,0 +1,13 @@
+package linkedLists;
+
+
+// linked list nodes store data, and the address of the next node that its attached too.
+public class Node {
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data = data;
+			
+		}
+}

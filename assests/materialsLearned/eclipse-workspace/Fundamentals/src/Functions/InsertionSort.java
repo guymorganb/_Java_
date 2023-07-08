@@ -28,7 +28,7 @@ public class InsertionSort {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[] arr = {4, 11, 7, 12, 2, 6, 3, 5, 10, 9};
+		int[] arr = {90, 31, 94, 80, 46, 28, 48, 31, 28, 90, 9, 27, 81, 43, 94, 5, 56, 13, 1, 23, 85, 71, 93, 53, 82 };
 		insertionSort(arr);
 		
 		printArray(arr);

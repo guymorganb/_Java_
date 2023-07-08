@@ -1,0 +1,18 @@
+package linkedLists;
+
+public class insertNodeIntoLinkedList {
+
+	public static void insert() {
+//		2 -> 8 -> 10 -> 15 -> 25
+		// insert 20 at position 3
+		// if you have to insert at position i, you must have the reference to position i-1
+		// travel to i-1 node
+		// make connection to i+1 node before connecting i-1 node
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -29,5 +29,10 @@ public class car extends Vehicle{
 		System.out.println(super.maxSpeed);  // will print parent class maxSpeed
 	}
 	
+	@Override
+	public boolean isMotorized() { // completes the incomplete method isMorotrized in abstract class Vehicle
+		return true;
+	}
+	
 	
 }

@@ -1,0 +1,5 @@
+package inheritance;
+// Interfaces are pure abstract classes
+public interface vehicleInterface {
+	
+}

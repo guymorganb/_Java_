@@ -1,0 +1,23 @@
+package linkedLists;
+
+public class LinkedListUse extends Node {
+
+	
+	LinkedListUse(Object data) {
+		super(data);
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		
+		Node<Integer> head = createLinkedList();
+		
+		Node<Integer> n1 = new Node<>(10);  
+		System.out.println(head.data);
+		System.out.println(head.next);
+		
+		
+
+	}
+
+}

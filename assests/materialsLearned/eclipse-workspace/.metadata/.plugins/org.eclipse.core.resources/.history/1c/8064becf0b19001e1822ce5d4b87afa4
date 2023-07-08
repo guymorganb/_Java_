@@ -1,0 +1,33 @@
+package linkedLists;
+
+
+// linked list nodes store data, and the address of the next node that its attached too.
+public class Node <T>{
+		T data;
+		Node <T> next;		// makes a pointer to the next node
+		
+		Node(T data){		
+			this.data = data;
+		}
+		
+		public static Node<Integer> createLinkedList() {
+			Node <Integer> n1 = new Node<>(10);	// creates a new node with data = 10 and next references the next nodes memory address
+			Node <Integer> n2 = new Node<>(20);
+			Node<Integer> n3 = new Node<>(30);
+			Node<Integer> n4 = new Node<>(40);
+			
+			n1.next = n2;			// points n1 to n2's address
+			n2.next = n3;
+			n3.next = n4;
+			return n1;		// should return the first nodes reference
+		}
+		
+		public static void print(Node <Integer> head) {
+			System.out.println("Print" + head);
+			
+			while(head != null) {
+				System.out.println(head.data);
+				head = head.next();	// will give the address of the second node
+			}
+		}
+}

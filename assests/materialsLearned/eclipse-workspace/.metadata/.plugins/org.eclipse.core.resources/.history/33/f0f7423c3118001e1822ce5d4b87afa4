@@ -1,0 +1,17 @@
+package generics;
+
+public class pairUse {
+
+	public static void main(String[] args) {
+		
+//		Pair p = new Pair(10, 20);
+//		System.out.println(p.getFirst() + " " + p.getSecond());
+//		PairString pS = new PairString("aa", "bb");
+//		PairDouble pS = new PairDouble(3.1, 7.2);
+		// <String> will be replaced at all instances of T in the constructor
+		Pair<String> pS = new Pair<String>("aa", "bb");
+		System.out.println(pS.getFirst() + " " + pS.getSecond());
+//		
+	}
+
+}
